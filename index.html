@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: "Inter";
+      src: url("fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+    }
+    @font-face {
+      font-family: "Lexend Deca";
+      src: url("fonts/Lexend Deca/LexendDeca-Regular.ttf");
+    }
+    *, *::after, *::before{
+      box-sizing: border-box;
+    }
+    body{
+      display: grid;
+      min-height: 100vh;
+      place-items: center;
+      background-color: #0a0c1b;
+    }
+    .card{
+      border-radius: 10px;
+      --width: 76.34vw;
+      position: relative;
+      height: calc(var(--width) * 0.4);
+      width: var(--width);
+      background-color: #1c1938;
+      overflow: hidden;
+      font-size: 20px;
+      font-family: Inter;
+      color: hsla(0, 0%, 100%, 0.75);
+
+
+    }
+    .left-top{
+      text-align: left;
+      position: absolute;
+      left: 0;
+      top: 0;
+      outline: 0;
+      margin: 0;
+      display: inline;
+      height: 60%;
+      width: 50%;
+      padding: 3% 0 0 5.5%;
+    }
+    .left-top h1{
+      font-weight: 700;
+      color: white;
+    }
+    .left-top p{
+      font-weight: 400;
+      font-size: 15px;
+    }
+    .left-top h1 span{
+      color: #a562d6;
+    }
+    .left-bottom{
+      font-size: 15px;
+      position: absolute;
+      height: 40%;
+      width: 50%;
+      left: 0;
+      bottom: 0;
+      font-family: Lexend Deca;
+      padding: 0 0 0 5.5%;
+      display: inline;
+      justify-content: space-between;
+    }
+    .left-bottom div{
+      padding-top: 5%;
+      height: 100%;
+      width: 33%;
+      float: left;
+    }
+    .left-bottom div p span{
+      color: white;
+      font-size: 24px;
+      font-weight: 700;
+    }
+    .left-bottom div > *:not(.left-bottom div p span){
+      text-transform: uppercase;
+    }
+    .right{
+      position: absolute;
+      top: 0;
+      right: 0;
+      outline: 0;
+      margin: 0;
+      height: 100%;
+      display: inline;
+      width: 50%;
+    }
+    .img{
+      background-image: url("images/image-header-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .filter{
+      height: 100%;
+      width: 100%;
+      background-color: hsla(277, 90%, 47%, 0.4);
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="left-top">
+      <h1>Get <span>insights</span> that help<br>your business grow.</h1>
+      <p>Discover the benefits of data analytics and make<br>better decisions regarding revenue, customer<br>
+        experience, and overall efficiency.</p>
+    </div>
+    <div class="left-bottom">
+      <div><p><span>10k+</span><br>companies</p></div>
+      <div><p><span>314</span><br>templates</p></div>
+      <div><p><span>12M+</span><br>queries</p></div>
+    </div>
+    <div class="right img">
+      <div class="filter"></div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
