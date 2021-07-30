@@ -112,6 +112,55 @@
     }
     .attribution { font-size: 1vw; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    @media screen and (max-width: 600px){
+      .card{
+        font-size: 3vw;
+        --width: 80vw;
+        width: var(--width);
+        height: calc(var(--width) * 1.777);
+        place-items: center;
+      }
+      .left-top{
+        font-size: 3vw;
+        left: auto;
+        right: auto;
+        top:33%;
+        text-align: center;
+        height: 28%;
+        width: 100%;
+      }
+      .left-top p{
+        font-size: 2.5vw;
+      }
+      .right{
+        top: auto;
+        left: auto;
+        right: auto;
+        height: 33%;
+        width: 100%;
+      }
+      .left-bottom{
+        font-size: 3vw;
+        top: auto;
+        left: auto;
+        right: auto;
+        text-align: center;
+        height: 38%;
+        width: 100%;
+      }
+      .left-bottom div{
+        line-height: 1.6;
+        padding: 0;
+        font-size: 2vw;
+        text-align: center;
+        height: 30%;
+        width: 100%;
+        float: none;
+      }
+      .left-bottom div p span{
+        font-size: 5vw;
+      }
+    }
   </style>
 </head>
 <body>
